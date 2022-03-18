@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hola mundo Vue</title>
+
+    <script src="https://unpkg.com/vue@next"></script>
+
+</head>
+<body>
+
+    <div id="app">
+        <h1>{{user.title}}</h1>
+        <h2>{{user.age < 18 ? "No puedes pasar" : "Puedes pasar" }}</h2>
+        
+        <img :src="user.pic" width="300" />
+        
+    </div>
+
+    <script src="./main.js"></script>
+
+    <script>
+        const mountApp = app.mount("#app")
+    </script>
+
+</body>
+</html>
